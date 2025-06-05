@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Leilão do Dantão</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;700"
+    />
+
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEQ4MDJCRjNENzk5MTFFOUEzRkZENzc3OEI3RDE0NjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEQ4MDJCRjRENzk5MTFFOUEzRkZENzc3OEI3RDE0NjAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowRDgwMkNGMUQ3OTkxMUU5QTNGRkQ3Nzc4QjdEMTQ2MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowRDgwMkNGMkQ3OTkxMUU5QTNGRkQ3Nzc4QjdEMTQ2MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqomHBkAAAAdSURBVHjaYvz//z8DJQAggJiQAgAEDAADfQHvKVgo/gAAAABJRU5ErkJggg==" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-[#111318]">
+    <div class="relative flex w-full min-h-screen flex-col bg-[#111318] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+      <div class="flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#282c39] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Leilão do Dantão</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="index.html">Início</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Categorias</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Como Funciona</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Contato</a>
+            </div>
+            <div class="flex gap-2">
+              <button
+                type="button"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#3d6bf4] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Cadastrar</span>
+              </button>
+              <button
+                type="button"
+                onclick="window.location.href='login.html'"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#282c39] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Entrar</span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <main class="px-10 sm:px-20 md:px-40 flex flex-1 justify-center py-5 items-center">
+          <div class="flex flex-col w-full max-w-[512px] py-5">
+            <h2 class="text-white tracking-tight text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">Bem-vindo de volta!</h2>
+            <form onsubmit="event.preventDefault(); window.location.href='index.html'; return false;">
+              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3 mx-auto">
+                <label for="email" class="flex flex-col min-w-40 flex-1">
+                  <span class="text-white text-sm mb-1">Email:</span>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seuemail@exemplo.com"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-[#3d6bf4] border-none bg-[#282c39] h-14 placeholder:text-[#9ca3ba] p-4 text-base font-normal leading-normal"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3 mx-auto">
+                <label for="password" class="flex flex-col min-w-40 flex-1">
+                  <span class="text-white text-sm mb-1">Senha:</span>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Digite sua senha"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-[#3d6bf4] border-none bg-[#282c39] h-14 placeholder:text-[#9ca3ba] p-4 text-base font-normal leading-normal"
+                    required
+                  />
+                </label>
+              </div>
+              <div class="text-center max-w-[480px] mx-auto px-4">
+                 <a href="#" class="text-[#9ca3ba] text-sm font-normal leading-normal pb-3 pt-1 underline cursor-pointer hover:text-[#3d6bf4]">Esqueceu sua senha?</a>
+              </div>
+              <div class="flex px-4 py-3 mt-4 max-w-[480px] mx-auto">
+                <button
+                  type="submit" 
+                  class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-[#3d6bf4] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#2c52d1] transition-colors duration-150"
+                >
+                  <span class="truncate">Entrar</span>
+                </button>
+              </div>
+            </form>
+            <p class="text-[#9ca3ba] text-sm font-normal leading-normal pb-3 pt-5 px-4 text-center max-w-[480px] mx-auto">Ou entre com</p>
+            <div class="flex justify-center">
+              <div class="flex w-full flex-col sm:flex-row flex-1 gap-3 px-4 py-3 max-w-[480px] justify-center">
+                <button
+                  type="button"
+                  class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#282c39] text-white text-sm font-bold leading-normal tracking-[0.015em] grow hover:bg-[#393f4f] transition-colors duration-150"
+                >
+                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.588 10.339c0-.709-.061-1.391-.179-2.049h-8.755v3.873h4.968c-.216 1.254-.869 2.319-1.801 3.036v2.511h3.228c1.888-1.734 2.973-4.296 2.973-7.371z"></path><path d="M13.654 22.428c2.549 0 4.684-.843 6.246-2.286l-3.228-2.511c-.843.566-1.921.896-3.018.896-2.319 0-4.282-1.563-4.982-3.661h-3.332v2.591c1.449 2.871 4.519 4.794 7.734 4.794z"></path><path d="M3.346 14.867c-.146-.422-.228-.869-.228-1.339s.082-.917.228-1.339V9.607H.014C.005 9.8.000 10.005.000 10.219c0 1.26.308 2.449.855 3.517l2.491 1.131z"></path><path d="M13.654 3.158c1.379 0 2.63.477 3.621 1.417l2.857-2.857C18.333.477 16.2.001 13.654.001 10.439.001 7.369 1.924 5.92 4.795l3.332 2.591c.7-2.098 2.663-3.661 4.982-3.661z"></path></svg>
+                  <span class="truncate">Google</span>
+                </button>
+                <button
+                  type="button"
+                  class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#282c39] text-white text-sm font-bold leading-normal tracking-[0.015em] grow hover:bg-[#393f4f] transition-colors duration-150"
+                >
+                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.03998C16.97 2.03998 21 6.06998 21 11C21 15.53 17.47 19.14 13.02 19.88V15.19H15.02L15.39 12.94H13.02V11.5C13.02 10.86 13.21 10.43 14.03 10.43H15.5V8.39998C15.21 8.36998 14.33 8.30998 13.32 8.30998C11.22 8.30998 9.89995 9.51998 9.89995 11.29V12.94H7.89995V15.19H9.89995V19.97C5.08995 19.43 2 15.59 2 11.01C2 6.07998 6.02995 2.03998 12 2.03998Z"></path></svg>
+                  <span class="truncate">Facebook</span>
+                </button>
+              </div>
+            </div>
+            <p class="text-center mt-6 px-4">
+                <span class="text-[#9ca3ba] text-sm">Não tem uma conta? </span>
+                <a href="#" class="text-[#3d6bf4] hover:text-[#2c52d1] text-sm font-medium underline">Cadastre-se</a>
+            </p>
+          </div>
+        </main>
+        <footer class="flex justify-center mt-auto">
+            <div class="flex w-full max-w-[960px] flex-1 flex-col">
+              <div class="flex flex-col gap-6 px-5 py-10 text-center">
+                <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+                  <a class="text-[#9ca3ba] text-sm hover:text-white" href="#">Sobre Nós</a>
+                  <a class="text-[#9ca3ba] text-sm hover:text-white" href="#">Contato</a>
+                  <a class="text-[#9ca3ba] text-sm hover:text-white" href="#">Termos de Serviço</a>
+                  <a class="text-[#9ca3ba] text-sm hover:text-white" href="#">Política de Privacidade</a>
+                </div>
+                <p class="text-[#9ca3ba] text-xs">© 2025 Leilão do Dantão. Todos os direitos reservados.</p>
+              </div>
+            </div>
+        </footer>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <title>Leilão do Dantão</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#111318] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#282c39] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Leilão do Dantão</h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">Categorias</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Próximos Leilões</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Como Funciona</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                <div
+                  class="text-[#9ca3ba] flex border-none bg-[#282c39] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Pesquisar"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#282c39] focus:border-none h-full placeholder:text-[#9ca3ba] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <div class="flex gap-2">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#3d6bf4] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Cadastrar</span>
+              </button>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#282c39] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Entrar</span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="px-4 py-3">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                  <div
+                    class="text-[#9ca3ba] flex border-none bg-[#282c39] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                    data-icon="MagnifyingGlass"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    placeholder="Pesquisar itens, marcas e muito mais"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#282c39] focus:border-none h-full placeholder:text-[#9ca3ba] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                </div>
+              </label>
+            </div>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDniw7GjpvLoAYe1LPaXeG4Z8_AIrh3a5hSBcbjORp_t6GcgXfXctMM6zFlrF4RSVCk6yizFBRDz0hj2qIdAowaRDKfzbrUieFYqqTkc4xuMJ7GdkoPvIPCPeLABSDo4sAcHnpQEt6Qt-q0OdWjSE6wn-856ngzmFFrndl85LCeVXlON-bIHHvfghaNI1us1Xpmry4XsWzuD2r3oDMM6R65wEGnybgLb4YuzHLQfHYAZnZnbH3t7TuEF_ZckYTu5ozGHzayfTvBUh4");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Arte Moderna Exclusiva</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Lote único de arte moderna, perfeito para colecionadores exigentes.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDf5scXISPEHqftf7ab-l80h3H9lPr0SO_8E8sFdt3MFCfJc0vQfk8LTNdYk_3D1VcGE6t0f2TK71Jf-9gwAapfH22l8mTnnDXyRLemVsOT14mAjPGbS970_pRt4u6NMzVHSb0gkbysm5zRTp00RRtKiiX5JaX_zhsvhf3s9VsLX8PjNsS9QE_AWV143ot7CmHQzbL0HzNast2-IY7av4uAd_zYBRfo3fgIh7W0PR1gJTmmghvvrjaULTYRbXjgAXaM569vaXYfAWk");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Carro Clássico de Colecionador</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Um carro clássico em condições impecáveis, um verdadeiro tesouro.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyL7fyq2nQfRBJpsxHKSKmyDjAt7ptDJMwhmfIzYvBTdZgqrMdu2Y9ZtxdQOdW1x-yO1CjTfPekINI6zF57D2w19cnkLuY9OCHAkr2BxLA9Apur7JWZVR5GRDzF7a4_Cy-tEevWVF1FV3Ddeuqw7qpCui_yRCLEolLKYzbUuED5X55KrhjDFNAY4bL05lVnXr1GMN12Kvr4GyAFh0p0BV02AxfQHSLX84K2ckYGDtf_iPUpUQvUk4TQo6vwAa6b6bvYwZeXmWMcPE");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Relógio de Luxo Edição Limitada</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Relógio de luxo com design exclusivo e materiais de alta qualidade.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Categorias em Destaque</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC67AD8KTFpdp_ZmHvkOlkv8xYwv86LO2b5GQ_TxMPHKvgcDXZYL5ix1Of4dcgtff2ERZQlJrNkI3oC4z6bwmCr1GjLUuaAK6JHgW13EFqzOsXN003CSGLL-o6RpRVMpsOzO45ZIcXI9v_zqO2SsXpvpZM2B6xg9CGMG92Cc-Mi-xArFjpvTt9wnwkfiA1_T1ah1Hj1d18FwLMzzRp6YEpg_ZXlWsVYCule9ART0iMEOzstGon-GidkpHld0bxnDD3ZmDykUDqhRsM");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Arte</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhFZh14r3y2kxfTplr_E5guFqUaUVF2omNpptEzQOXXtV4xW_B7G3siEf6frQyElxb2SXgupG6kd31Qm0rbgi9wMM8TYF2AUMTdVLC_5kmC4eJ-HhU40YAN3Zv8rKaNGnShk820ECpNhcFVE8m1Suao6UTB1c1BOoX07Q5ROVD6s7SGXqgAiJFGpX7RPZJtehaBST4ZsV-KyKthIOm8x2z8uudmQL_SMcvAuQXWX3p7HhZz7Px8lqkPz1ZUI1NeNtwGgO03KWy8ks");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Colecionáveis</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD75sPM6wWracFR5-ioJVb7ldOhG0r6wJfVuzBGRNgOWgF2QpBRwZtOEcWuKTmCoMgmgwaoOpTTZ0MeI3XjenW472M5r_mzZEHU9Dv0cy1KYAeQXPqT7-bAXyzPzgIGg4wAwBFCeHBJgtiUN0l7MsKDfc3SM4xcZ2qe00fzIwdKYS2FFtxXB-k0I2QQQapMAe3zWRxLpy1pIQvQEbaSIlswlVDRkjQ7wD_WqD9b2rAD2QrF3djAjAd8ddGrNMT8vFIhEuI-jmRBtUM");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Eletrônicos</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLJCNNHBNut4ePVboO7LmS1E8R0UoLcjdp1g9Z33qcQAJn2fJtRIJwmuotTYmOm53HMbnXOAKQCChX2m5JkJU1Fx_q0PFBobmJd4HjVLYlDDUl6JrBBW4L31DMSextbD4NwFQvOWBO_-vBCURslUZGm7loMr2T1TVuIAqn8xybS6Gg2Bh6gUsvPUF0Dtkd0ZYrOsKrvEphv2B-mXOfIdo_9r8lBHqexWNVThfq-WwdJK1e1qRMAhYakD-8EA2IjyFfugYxtUBEYwo");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Joias</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQC2i7S7H8rXmNzhu4RF1LSLiL6SWydd95NiD_snnz39wNLQLnRIgzHcBFdFq4LK0VZC_MowGm_beAuxls5qM_mQYDTAxRRhsc6U1T4Zz2U--wwEiFJTzlnNQ3MgiCL4S_1rK-8AQzKtcmmiFi_U0613wr2X4ssS0aLBzcIBCC5i8-WoRQxrEv1f5EOtr5oVBuss5qaItRJX8SUJbBGqd9_sjJK-DMv2NY9n7q-oAx_nNaxrbFRuzppb2H3Kssw5wtAI_AV9Li29I");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Roupas</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1xxqO2tlgdkrEK_F8h7a4z7OjLGhcL6LUZLSSm7vKXmpy_siYGjPrq0fw-HSeSN7Ae4KB9BTUyi4t0bO9RGZf-a90ysxyFBSwuShBkRJ6mW_DshF-pPDsWkXXl7zPcjqlmIlxSEt6M-IObIqjke6xb_aypKeGuWbj3YwDKJe7hN-obWaOshGG0MV3jLldkyIMGubdb0pdQGldQwDOzaEAiVCJSE2YA12QRGVh9JUfu_bro5PDwewrnJH03p8MAUKUpuIlODvMJq0");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Casa e Decoração</p>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Itens com Leilões Próximos do Fim</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC6JKBR0kq03ttUOH69d42SE9lqX_sc3o0iwtC_Tnns6zPed8hb803qecMrwtFg34OTnlrwWQhJeTQm_NW6hy9kqbrbZH4YGBqMj2woPtfZUCuhLDF7KVXxFE5fFSJNGj7x7lOLbgYuNOHjMW3H5x0Wi_HiREDN3gEKqjvWgkMUtJ8FxBIVJXXj9zs0EMq5DZAk4FSV14jG7ZAC_nAoI576eBbFJjttn2cNDDGTqcu8Z-wM6arCNPYSbEoprztlwWGUNKrMXBLmjrs");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Móvel Antigo Restaurado</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Peça única de mobiliário antigo, restaurada com maestria.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnPfrxz3ymKo1-poq4OJDgcOu7p7VyprcMNI6Qlzmg3eYG2vldjLJms6swnusoozMasgQ6Ht-QFmF82L_FefIp60KYgN3LzX_h3rmAxIIo44eXbkT74XxFKVPvSI1_b-OBiEcWdft1OXj-wid5QRp_fBwIQ5_T7A0IlgphatWdohvWVon2NgrdQYq6pgFiylRtSn908zULezxWQQRpRR8p83jNiiSPkavRcg4qocQLV6g3pia52bMSbVt8BP5p5_OAmxusnsazbN4");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Livro Raro de Primeira Edição</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Livro raro em excelente estado, um item de colecionador.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxabKDU2KtpMPpP5BcFNxbXmua3YeXzIKSGHhO6K71hLkzjZQYU3uNaEbOmCy08yTT8JeAPiiOCevOQocu7Yn5B0TyI2JFAZYURnxDR8Gh0YHbOU4JH7wvpokCBYKoUk_IXSDPs5eWjzBW_nab9urMVXILqNXRXum6MJ-QJsiMS-Y6OO-zJVJhXOOwvQcBLbVkaM4RBc-S9INE4fHRSF0aVNpxBJed7IM8CNHIRk_oZwBXXg-E2Dx17QYKOGq17Hts0jarfXDh5vw");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Câmera Vintage de Colecionador</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Câmera vintage em perfeito funcionamento, ideal para entusiastas.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Novos Itens Adicionados</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdkW_sFyZ_2ZezO2UVJxEZSkBoga7gouyUjW6nWRxsD-BEEDzT8H426bzOU2aXet0sLm6GHmCXqvXXl9lfbBe6DBIh7_QvPiPs9Nnv5z_7DIsoYC9nRONh_N-oP8uixq99_LmZ2rgSpfpKfuOJRNdNz3OeXaFN9N2haLHnzHnMapVfJoeARLj7kYoaIjm7pNuUO9GiFyC9dYurl20OsvrJDJ35lx9O8-oNYnwhfnE7vAhHsIjHnL98LAIV5z24TB-hyrh0nk2yCpU");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Escultura Moderna Abstrata</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Escultura abstrata em metal, uma peça de arte contemporânea.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCeEx8gMPvSJ7v88z9u9L7GFZhZd_icedvuNsCIlwBxHWHtgfEOHEuHUvQgJkZLNhWtYs7aD883Y7aB8i9WxsFBy2O3BtCJiqBYmtJkOOSC8x6o-vkN8lLJuuJqbo8QtIO-RKx8zpbTdH4_4GQD6jJ6dYsO6eoQziZtABzBCNS0w-Hwyb4E6mQ-4mpe4FdjEe62IQPoXrzYQfvYCsH_pfy8jRroCCg7ibHgJj3iDIMdgS2PpJVfMmCzFM_rQMJlhbZfuxpxILGDtks");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Tênis de Edição Limitada</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Tênis de colecionador, novo e na caixa original.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGN5f2lKvmmdju1PH91XnUiF2GzFK_ZCW7CpVmPIlA0wuvLVWiCBVgFIEWceefkQ1OslPTRNo7Pz8zi8W8ZJdZA8wnz7LvbDVix3p5zOsA18orPn7UfxuIkBV9FC0zL-ho8fUNl1MtDj0nawHjsklEbTADB8gU13pS7_Ry3c6HSnHY_NfXKQhvz1GorIniqTRk_aie4K5XCskqLO4nOtL8_AFqjs5I3VriSP3jY4iDaWcIh7Eb8eBmBciDxN1cT-RTvpLFgIXQOKQ");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Bolsa de Grife Exclusiva</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Bolsa de grife em couro, um acessório de luxo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Itens Visualizados Recentemente</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAv7MheXUTzUnuFJtvChFrkEfSBfHaTNPGSvRahqcXSQDDBsmm_sXpVVlDeXUGPErHUKTkcMC11lC_A5BudEHjP873s1La0BQeAq-8hvL8zheIrnX915G-H7FVE3kHtVn6AX6JD2KkaG6e7NvLFl2sN_Q38LEjvedTc6HsHAoSdtVEolBuYGTyhoPYH4rJP02ehX0YZ4EWPlSR-n1gh9Ret5jirLEm3xHRhNImW4PFpu4XbZk4ZNKj8_3TnSEbQ8-s9Ih18op0Y-dU");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Discos de Vinil Vintage</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Coleção de discos de vinil de artistas renomados.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdGQUFbUG3uD-sVmCbTx2WQCrdb9uF_inm9sd0a4vdCj1Ekk2skizgGKWoFlQ8peNOWBk19RaN3YE2Lbz5LFKtNgvSunV-_SDc7WHUjORX10pz0qjfmYNQlsduw8jekaMoygeBkZtwx7YTKUHYFu5oVYDKqEy73OKKyV0s_iptBwagSwwyQul1HS6W8ru44dla4SJaTJ3bXIaP-EWEdf7CfExu7r1GT91ax98tU8zkT_XVcV9K861VFW5kj7goh2h_6cn2ouwvVeU");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Jogo de Tabuleiro Clássico</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Jogo de tabuleiro clássico em edição de colecionador.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFM6SciwrhjlP3QUvRNe987uHra9cauKMyQWhMY0OYlNMGUQiP0EQ17aVdpvOELH6oq9X4av743_sVDpYtKzVY1Y6oMQEc1QpYcAgU1PZOvNdCriAe2cLrPVnn7goqvYhiogs6RQZZN0SHkIP8yWzuOf63cBNnOxnnqlR83n1bD_Os2A7O_YNwv9rpkZzM6pUdcuAv-tq0tcN6Nd04qP0The2BeW-gogZRXFuhHDKQMBk01M_H1ynPR_4o22QXvfXkuvGeqWRzPLU");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Bicicleta Retrô Restaurada</p>
+                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Bicicleta retrô restaurada, perfeita para passeios urbanos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#9ca3ba] text-base font-normal leading-normal min-w-40" href="#">Sobre Nós</a>
+                <a class="text-[#9ca3ba] text-base font-normal leading-normal min-w-40" href="#">Contato</a>
+                <a class="text-[#9ca3ba] text-base font-normal leading-normal min-w-40" href="#">FAQ</a>
+                <a class="text-[#9ca3ba] text-base font-normal leading-normal min-w-40" href="#">Termos de Serviço</a>
+              </div>
+              <p class="text-[#9ca3ba] text-base font-normal leading-normal">© 2025 Leilão do Dantão. Todos os direitos reservados.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
