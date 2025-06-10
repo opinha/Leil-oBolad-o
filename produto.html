@@ -1,0 +1,373 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <title>Pintura a Óleo - Leilão do Dantão</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#111318] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#282c39] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-4">
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Leilão do Dantão</h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <!-- LINK MODIFICADO -->
+              <a class="text-white text-sm font-medium leading-normal" href="index.html">Início</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Próximos Leilões</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Como Funciona</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Contato</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-2 items-center">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64 mr-6">
+              <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                <div
+                  class="text-[#9ca3ba] flex border-none bg-[#282c39] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Pesquisar"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#282c39] focus:border-none h-full placeholder:text-[#9ca3ba] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <div class="flex gap-2">
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#282c39] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-white" data-icon="Heart" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#282c39] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-white" data-icon="Bell" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            
+            <!-- INÍCIO DO MENU DROPDOWN DE PERFIL -->
+            <div class="relative">
+              <!-- Botão que aciona o menu -->
+              <button id="profile-menu-button" class="flex items-center gap-2 rounded-full focus:outline-none">
+                <img class="h-10 w-10 rounded-full object-cover" src="20250226_162600 (1).jpg" alt="Foto do usuário">
+                <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <!-- O Menu Dropdown (escondido por padrão) -->
+              <div id="profile-menu" class="hidden absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-[#282c39] py-1 shadow-lg ring-1 ring-black ring-opacity-5 z-10" role="menu">
+                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-600" role="menuitem">Minha Conta</a>
+                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-600" role="menuitem">Meus Lances</a>
+                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-600" role="menuitem">Itens à Venda</a>
+                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-600" role="menuitem">Lista de Observação</a>
+              </div>
+            </div>
+            <!-- FIM DO MENU DROPDOWN DE PERFIL -->
+            
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap gap-2 p-4">
+              <a class="text-[#9ca3ba] text-base font-medium leading-normal" href="#">Colecionáveis</a>
+              <span class="text-[#9ca3ba] text-base font-medium leading-normal">/</span>
+              <a class="text-[#9ca3ba] text-base font-medium leading-normal" href="#">Arte</a>
+              <span class="text-[#9ca3ba] text-base font-medium leading-normal">/</span>
+              <span class="text-white text-base font-medium leading-normal">Pinturas</span>
+            </div>
+            <h2 class="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">Pintura a Óleo 'Flores do Campo' por Morgana Zagury</h2>
+            <div class="flex w-full grow bg-[#111318] @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-[#111318] @[480px]:gap-2 aspect-[3/2] rounded-lg grid grid-cols-[2fr_1fr_1fr]">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none row-span-2"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHIckwMSfInZDHpnsAoL7cHL10pWA-d12S6xX5esmGunRalEZVi5D6OwyaIa_SEwZ1XFfsA9zi2EYm2Avny49ZeQFVjwUGC1I8V4PESI1cX3UH9BL_GLhz-lKJeFxNBQAHFsSqO0lTj5cqwEpt354RnDBnxC0zqvqFf3iQMQ5BP8XqBCuSjLWG6G94pPiovTdAxsz_IkE_USeu4djqnlfICZKumI7dOACTsjsNwL3caIPE8KMrHNC3ExI3rRdBHT-DgqzsvzxxHts");'
+                ></div>
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none col-span-2"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCD9RlCIv7es5mmVqufENpZprobwtgP9hxJrnEf1qUc7GA8P9jFg4dvGXytbDsewV0Zb2kY29CXMxurCySXxw027ECegXIrGKoboixGyeW8xKaxQnZWF16oFjbdBUQX2FQXTwIYfpg-FIjJq8pg7pknyYDN53J2Eaef6Ty9ghBaJrTuIFijvkxMkAUoyqLS1S3wdJ_fsNI-eFrfElQt68-lcpPeCSuPvDLkI47f_Fm7-GueSCIv5H-o2NGOL1fpc0cPh6bGiIkAzik");'
+                ></div>
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none col-span-2"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA3j8XpbHMw1OiZOVkEgLatXxQBwS_PBEZ2LFMZ6o4jRrMova2o4_MgZyg54d7v7gCNQoBu88bCLb1eAWXxrD_VNBlwKT9zLoJXewJqCnCFJO9JLUZ33wGj5vIZObesCDydwOytgGjUfPZTX7abIybq0uzAIf1LBQAXGY9WjSMh2_Jdt99ofPJz7EsmS7SwSi3D2ydlghdMCf4DT3AOT1r21bVk-7SBGKTYw90eDN9wfXVasfUAykUzMdiQZCHiifMiUCJ9QR5tnts");'
+                ></div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Detalhes do Item</h2>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b4154] py-5">
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Artista</p>
+                <p class="text-white text-sm font-normal leading-normal">Morgana Zagury</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b4154] py-5">
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Título</p>
+                <p class="text-white text-sm font-normal leading-normal">Flores do Campo</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b4154] py-5">
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Técnica</p>
+                <p class="text-white text-sm font-normal leading-normal">Óleo sobre tela</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b4154] py-5">
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Dimensões</p>
+                <p class="text-white text-sm font-normal leading-normal">60 x 80 cm</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b4154] py-5">
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Ano</p>
+                <p class="text-white text-sm font-normal leading-normal">2023</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b4154] py-5">
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Condição</p>
+                <p class="text-white text-sm font-normal leading-normal">Excelente</p>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Informações do Leilão</h2>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b4154] py-5">
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Lance Atual</p>
+                <p class="text-white text-sm font-normal leading-normal">R$ 1.200</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b4154] py-5">
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Lance Mínimo</p>
+                <p class="text-white text-sm font-normal leading-normal">R$ 1.300</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b4154] py-5">
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Incremento</p>
+                <p class="text-white text-sm font-normal leading-normal">R$ 50</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b4154] py-5">
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Número de Lances</p>
+                <p class="text-white text-sm font-normal leading-normal">5</p>
+              </div>
+            </div>
+            <div class="flex gap-4 py-6 px-4">
+              <div class="flex grow basis-0 flex-col items-stretch gap-4">
+                <div class="flex h-14 grow items-center justify-center rounded-lg px-3 bg-[#282c39]">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">2</p>
+                </div>
+                <div class="flex items-center justify-center"><p class="text-white text-sm font-normal leading-normal">Dias</p></div>
+              </div>
+              <div class="flex grow basis-0 flex-col items-stretch gap-4">
+                <div class="flex h-14 grow items-center justify-center rounded-lg px-3 bg-[#282c39]">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">14</p>
+                </div>
+                <div class="flex items-center justify-center"><p class="text-white text-sm font-normal leading-normal">Horas</p></div>
+              </div>
+              <div class="flex grow basis-0 flex-col items-stretch gap-4">
+                <div class="flex h-14 grow items-center justify-center rounded-lg px-3 bg-[#282c39]">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">32</p>
+                </div>
+                <div class="flex items-center justify-center"><p class="text-white text-sm font-normal leading-normal">Minutos</p></div>
+              </div>
+              <div class="flex grow basis-0 flex-col items-stretch gap-4">
+                <div class="flex h-14 grow items-center justify-center rounded-lg px-3 bg-[#282c39]">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">17</p>
+                </div>
+                <div class="flex items-center justify-center"><p class="text-white text-sm font-normal leading-normal">Segundos</p></div>
+              </div>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <input
+                  placeholder="Seu Lance"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3b4154] bg-[#1b1e27] focus:border-[#3b4154] h-14 placeholder:text-[#9ca3ba] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex justify-stretch">
+              <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-start">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#3d6bf4] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Fazer Lance</span>
+                </button>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#282c39] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Adicionar à Lista de Observação</span>
+                </button>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Histórico de Lances</h2>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-lg border border-[#3b4154] bg-[#111318]">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-[#1b1e27]">
+                      <th class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-120 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Usuário</th>
+                      <th class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-240 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Lance</th>
+                      <th class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-360 px-4 py-3 text-left text-white w-[400px] text-sm font-medium leading-normal">Data</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#3b4154]">
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        P. Rogério
+                      </td>
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#9ca3ba] text-sm font-normal leading-normal">R$ 1.200</td>
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#9ca3ba] text-sm font-normal leading-normal">
+                        20/07/2024 14:28
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#3b4154]">
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Gabriel Braga
+                      </td>
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#9ca3ba] text-sm font-normal leading-normal">R$ 1.150</td>
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#9ca3ba] text-sm font-normal leading-normal">
+                        20/07/2024 14:25
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#3b4154]">
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Dante de Souza
+                      </td>
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#9ca3ba] text-sm font-normal leading-normal">R$ 1.100</td>
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#9ca3ba] text-sm font-normal leading-normal">
+                        20/07/2024 14:20
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#3b4154]">
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Carlos Mendes
+                      </td>
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#9ca3ba] text-sm font-normal leading-normal">R$ 1.050</td>
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#9ca3ba] text-sm font-normal leading-normal">
+                        20/07/2024 14:15
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#3b4154]">
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-120 h-[72px] px-4 py-2 w-[400px] text-white text-sm font-normal leading-normal">
+                        Sofia Almeida
+                      </td>
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-240 h-[72px] px-4 py-2 w-[400px] text-[#9ca3ba] text-sm font-normal leading-normal">R$ 1.000</td>
+                      <td class="table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-360 h-[72px] px-4 py-2 w-[400px] text-[#9ca3ba] text-sm font-normal leading-normal">
+                        20/07/2024 14:10
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                      @container(max-width:120px){.table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-120{display: none;}}
+                @container(max-width:240px){.table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-240{display: none;}}
+                @container(max-width:360px){.table-04bba61f-85ef-48dc-aee3-dcf6e539bbd7-column-360{display: none;}}
+              </style>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Informações do Vendedor</h2>
+            <div class="flex items-center gap-4 bg-[#111318] px-4 min-h-[72px] py-2">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAx444DvAdQ_rlGtkSO6s_1rVzLos_Wm3sHr3Fsu2GVmLeTOSP0D59VroUWKICxmwWHRQmcNAGJxkvWelSSeClKjU1s8qc9xXw-Mlw4LeI7nrKfRCliovWfFh4giGOiIbSD1L8J4K_vd0m7s5L9Rb_1BJy6R40RzPlre00B6vB35N3D5Tl2jjsQIB93Lg2nY44l4yVePRTb6V2e0ErWM8y12Lnch48_4zQy46Obc64Z0QaJnKAMe0RuKDXiO-xrkWC4G-LEI7CxQVA");'
+              ></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-white text-base font-medium leading-normal line-clamp-1">Galeria de Arte Moderna POO2</p>
+                <p class="text-[#9ca3ba] text-sm font-normal leading-normal line-clamp-2">Vendedor desde 2020</p>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Envio e Pagamento</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Envio para todo o Brasil. Aceitamos cartões de crédito, boleto bancário e transferência bancária. O pagamento deve ser realizado em até 3 dias úteis após o término do
+              leilão.
+            </p>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#9ca3ba] text-base font-normal leading-normal min-w-40" href="#">Sobre nós</a>
+                <a class="text-[#9ca3ba] text-base font-normal leading-normal min-w-40" href="#">Termos de uso</a>
+                <a class="text-[#9ca3ba] text-base font-normal leading-normal min-w-40" href="#">Política de privacidade</a>
+                <a class="text-[#9ca3ba] text-base font-normal leading-normal min-w-40" href="#">Ajuda</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#9ca3ba]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#9ca3ba]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#9ca3ba]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#9ca3ba] text-base font-normal leading-normal">© 2025 Leilão do Dantão. Todos os direitos reservados.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+    
+    <!-- INÍCIO DO SCRIPT PARA O MENU FUNCIONAR -->
+    <script>
+      const menuButton = document.getElementById('profile-menu-button');
+      const profileMenu = document.getElementById('profile-menu');
+
+      menuButton.addEventListener('click', () => {
+        // Alterna a classe 'hidden' para mostrar ou esconder o menu
+        profileMenu.classList.toggle('hidden');
+      });
+
+      // Opcional: Fecha o menu se o usuário clicar fora dele
+      window.addEventListener('click', (e) => {
+        if (!menuButton.contains(e.target) && !profileMenu.contains(e.target)) {
+          profileMenu.classList.add('hidden');
+        }
+      });
+    </script>
+    <!-- FIM DO SCRIPT -->
+    
+  </body>
+</html>

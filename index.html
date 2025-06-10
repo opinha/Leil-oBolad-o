@@ -5,7 +5,7 @@
       rel="stylesheet"
       as="style"
       onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Space+Grotesk%3Awght%40400%3B500%3B700"
     />
 
     <title>Leilão do Dantão</title>
@@ -20,12 +20,6 @@
           <div class="flex items-center gap-8">
             <div class="flex items-center gap-4 text-white">
               <div class="size-4">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
               </div>
               <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Leilão do Dantão</h2>
             </div>
@@ -35,8 +29,8 @@
               <a class="text-white text-sm font-medium leading-normal" href="#">Como Funciona</a>
             </div>
           </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+          <div class="flex flex-1 justify-end gap-2 items-center">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64 mr-6">
               <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
                 <div
                   class="text-[#9ca3ba] flex border-none bg-[#282c39] items-center justify-center pl-4 rounded-l-lg border-r-0"
@@ -57,20 +51,54 @@
                 />
               </div>
             </label>
+            
+            <!-- INÍCIO DOS ÍCONES ADICIONADOS -->
             <div class="flex gap-2">
               <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#3d6bf4] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#282c39] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
               >
-                <span class="truncate">Cadastrar</span>
+                <div class="text-white" data-icon="Heart" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                    ></path>
+                  </svg>
+                </div>
               </button>
               <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#282c39] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#282c39] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
               >
-                <span class="truncate">Entrar</span>
+                <div class="text-white" data-icon="Bell" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                    ></path>
+                  </svg>
+                </div>
               </button>
             </div>
+            <!-- FIM DOS ÍCONES ADICIONADOS -->
+
+            <!-- INÍCIO DO MENU DROPDOWN DE PERFIL -->
+            <div class="relative">
+              <button id="profile-menu-button" class="flex items-center gap-2 rounded-full focus:outline-none">
+                <img class="h-10 w-10 rounded-full object-cover" src="20250226_162600 (1).jpg" alt="Foto do usuário">
+                <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="profile-menu" class="hidden absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-[#282c39] py-1 shadow-lg ring-1 ring-black ring-opacity-5 z-10" role="menu">
+                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-600" role="menuitem">Minha Conta</a>
+                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-600" role="menuitem">Meus Lances</a>
+                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-600" role="menuitem">Itens à Venda</a>
+                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-600" role="menuitem">Lista de Observação</a>
+              </div>
+            </div>
+            <!-- FIM DO MENU DROPDOWN DE PERFIL -->
+            
           </div>
         </header>
+
         <div class="px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="px-4 py-3">
@@ -96,18 +124,22 @@
                 </div>
               </label>
             </div>
-            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <div class="flex items-stretch p-4 gap-3">
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDniw7GjpvLoAYe1LPaXeG4Z8_AIrh3a5hSBcbjORp_t6GcgXfXctMM6zFlrF4RSVCk6yizFBRDz0hj2qIdAowaRDKfzbrUieFYqqTkc4xuMJ7GdkoPvIPCPeLABSDo4sAcHnpQEt6Qt-q0OdWjSE6wn-856ngzmFFrndl85LCeVXlON-bIHHvfghaNI1us1Xpmry4XsWzuD2r3oDMM6R65wEGnybgLb4YuzHLQfHYAZnZnbH3t7TuEF_ZckYTu5ozGHzayfTvBUh4");'
-                  ></div>
-                  <div>
-                    <p class="text-white text-base font-medium leading-normal">Arte Moderna Exclusiva</p>
-                    <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Lote único de arte moderna, perfeito para colecionadores exigentes.</p>
+
+                <a href="produto.html" class="block">
+                  <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                    <div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHIckwMSfInZDHpnsAoL7cHL10pWA-d12S6xX5esmGunRalEZVi5D6OwyaIa_SEwZ1XFfsA9zi2EYm2Avny49ZeQFVjwUGC1I8V4PESI1cX3UH9BL_GLhz-lKJeFxNBQAHFsSqO0lTj5cqwEpt354RnDBnxC0zqvqFf3iQMQ5BP8XqBCuSjLWG6G94pPiovTdAxsz_IkE_USeu4djqnlfICZKumI7dOACTsjsNwL3caIPE8KMrHNC3ExI3rRdBHT-DgqzsvzxxHts");'
+                    ></div>
+                    <div>
+                      <p class="text-white text-base font-medium leading-normal">Arte  Exclusiva</p>
+                      <p class="text-[#9ca3ba] text-sm font-normal leading-normal">Lote único de arte, perfeito para colecionadores exigentes.</p>
+                    </div>
                   </div>
-                </div>
+                </a>
+
                 <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
                   <div
                     class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
@@ -176,7 +208,7 @@
               </div>
             </div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Itens com Leilões Próximos do Fim</h2>
-            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <div class="flex items-stretch p-4 gap-3">
                 <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
                   <div
@@ -211,7 +243,7 @@
               </div>
             </div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Novos Itens Adicionados</h2>
-            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <div class="flex items-stretch p-4 gap-3">
                 <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
                   <div
@@ -246,7 +278,7 @@
               </div>
             </div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Itens Visualizados Recentemente</h2>
-            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <div class="flex items-stretch p-4 gap-3">
                 <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
                   <div
@@ -297,5 +329,21 @@
         </footer>
       </div>
     </div>
+    
+    <script>
+      const menuButton = document.getElementById('profile-menu-button');
+      const profileMenu = document.getElementById('profile-menu');
+
+      menuButton.addEventListener('click', () => {
+        profileMenu.classList.toggle('hidden');
+      });
+
+      window.addEventListener('click', (e) => {
+        if (!menuButton.contains(e.target) && !profileMenu.contains(e.target)) {
+          profileMenu.classList.add('hidden');
+        }
+      });
+    </script>
+    
   </body>
 </html>
